@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 
 # --- Page Configuration ---
 st.set_page_config(
-    page_title="AquaSafe | Water Potability Predictor",
+    page_title=" Water Potability Predictor",
     page_icon="💧",
     layout="centered"
 )
@@ -110,9 +110,3 @@ else:
             st.error(f"### Result: Not Potable (Unsafe)")
             st.markdown(f"**Confidence Level:** {(1-probability)*100:.2f}%")
 
-# --- Footer Info ---
-st.sidebar.title("About")
-st.sidebar.info(
-    "This dashboard uses a **LightGBM Classifier** to analyze water quality attributes. "
-    "The model was trained on the Water Potability dataset to classify water safety."
-)
