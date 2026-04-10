@@ -66,7 +66,7 @@ def train_lgbm_model():
 model, scaler = train_lgbm_model()
 
 # --- Dashboard Header ---
-st.title("💧 AquaSafe Predictor")
+st.title("💧 Water Potability Predictor")
 st.markdown("Enter the water quality parameters below to check if the water is **Potable (Safe to Drink)**.")
 st.divider()
 
